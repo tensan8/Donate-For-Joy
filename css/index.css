@@ -1,0 +1,41 @@
+/* FIRST SECTION */
+
+.first-section {
+    height: 150%;
+    background-image: url("../images/cover-darken.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* SECOND SECTION */
+
+.second-section {
+    height: 150%;
+}
+
+.second-section p {
+    display: inline;
+}
+
+.second-section h2 {
+    font-style: italic;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.second-section div > img {
+    width: 40%;
+    height: 40%;
+}
+
+.second-section div:nth-child(odd) * {
+    float: left;
+}
+
+/* THIRD SECTION */
+
+.third-section {
+    height: 150%;
+    background-color: red;
+}
