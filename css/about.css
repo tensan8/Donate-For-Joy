@@ -1,7 +1,81 @@
-#about-title{
+#centered-title{
     text-align: center;
 }
 
-#main-subtitle-centered{
+.main-subtitle-centered{
     text-align: center;
+    font-size: 1.3rem;
+}
+
+#quotes-under-title{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.highlight-text{
+    background-color: #E5D3BB;
+}
+
+#first-picture-cover-big{
+    width: 50%;
+    height: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#second-picture-cover-wide{
+    width: 100%;
+    height: 25rem;
+}
+
+.italize-text-centered{
+    text-align: center;
+    font-style: italic;
+    margin-top: 5rem;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+#address-style{
+    text-decoration: none;
+    color: #AC3E3E;
+    transition: ease-out 0.7s;
+}
+
+#address-style:hover {
+    color: #DABCA0;
+    transition: ease-in-out 0.5s;
+}
+
+table{
+    width: 60%;
+    margin: 2rem auto;
+}
+
+table p{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.animate-text{
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #F8F7F5 50%, #E5D3BB 50%);
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    transition: background-position 1s;
+}
+
+.animate-text-scrolled{
+    background-position: -100% 0;
+}
+
+.pop-hl{
+    background-size: 200% 100%;
+    background-position: -100% 0;
+    background-image: linear-gradient(to right, #F8F7F5 50%, #D5BAB3 50%);
 }
