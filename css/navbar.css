@@ -1,0 +1,9 @@
+.header-bar {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.header-bar * {
+    float: left;
+}
+

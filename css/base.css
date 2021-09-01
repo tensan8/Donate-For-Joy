@@ -9,6 +9,7 @@ font-family: 'Rubik', sans-serif;
 
 * {
     box-sizing: border-box;
+    background-color: #F8F7F5;
 }
 
 .title-text{
@@ -38,6 +39,10 @@ p {
 .secondary-color-bg {
     color: #E5D3BB;
 }
+
+
+
+
 
 
 
