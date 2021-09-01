@@ -1,15 +1,28 @@
 .container {
     display: flex;
     align-items: center;
-    width: 10%;
+    width: 40%;
+    margin-left: 0.4rem;
 }
 
 .icon {
-    width: 70%;
+    width: 2.5rem;
     height: auto;
 }
 
 .text {
-    font-size: 1.6vw;
+    font-size: 1rem;
     text-align: left;
+    padding-left: 1.5rem;
+}
+
+.seamless-link {
+    text-decoration: none;
+    color: black;
+    transition: ease-out 0.7s;
+}
+
+.seamless-link:hover {
+    color: #DABCA0;
+    transition: ease-in-out 0.5s;
 }
