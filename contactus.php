@@ -11,7 +11,7 @@
 <body>
     <?php include("navbar.php") ?>
 
-    <h1 class="title-text">Contact Us</h1>
+    <h1 class="title-text" id="contact-us-title">Contact Us</h1>
     <div class="container">
         <div class="icons">
             <img src="images/mail.png" alt="Email Logo" class="icon"/>

@@ -9,6 +9,8 @@
     <link href='css/about.css' rel='stylesheet'>
 </head>
 <body>
+    <?php include("navbar.php") ?>
+    
     <h1 class="title-text" id="about-title">Donate For Joy</h1>
     <p id="main-subtitle-centered">by PPI Sarawak</p>
 </body>
