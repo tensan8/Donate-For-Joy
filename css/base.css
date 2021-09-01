@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&family=Kaushan+Script&family=Montserrat&family=Rubik:ital,wght@0,400;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    font-family: "Georgia", serif;
+}
+
+a {
+    font-family: "Montserrat";
+}
+
+.primary-color-bg {
+    color: #F8F7F5;
+}
+
+.secondary-color-bg {
+    color: #E5D3BB;
+}
+
+
+
+
+
