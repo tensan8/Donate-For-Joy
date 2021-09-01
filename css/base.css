@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio&family=Kaushan+Script&family=Montserrat&family=Rubik:ital,wght@0,400;1,600&display=swap');
 
+/*
+
+font-family: 'Kaushan Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+
 * {
     box-sizing: border-box;
+}
+
+.title-text{
+    font-family: 'Kaushan Script', cursive;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,6 +25,10 @@ body {
 
 a {
     font-family: "Montserrat";
+}
+
+p {
+    font-family: 'Gelasio', serif;
 }
 
 .primary-color-bg {

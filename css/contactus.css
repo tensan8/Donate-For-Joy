@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.icon {
+    width: 70%;
+    height: auto;
+}
+
+.text {
+    font-size: 1.6vw;
+    text-align: left;
+}
