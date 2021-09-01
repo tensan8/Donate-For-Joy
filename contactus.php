@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate For Joy | Contact Us</title>
-    <link href='css/contactus.css' rel='stylesheet'>
     <link href='css/base.css' rel='stylesheet'>
+    <link href='css/contactus.css' rel='stylesheet'>
+    
 </head>
 <body>
+    <?php include("navbar.php") ?>
+
     <h1 class="title-text">Contact Us</h1>
     <div class="container">
         <div class="icons">
