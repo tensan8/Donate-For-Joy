@@ -7,12 +7,13 @@
     <title>Donate For Joy | Contact Us</title>
     <link href='css/base.css' rel='stylesheet'>
     <link href='css/contactus.css' rel='stylesheet'>
+    <script src="script/contactus_animation.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <?php include("navbar.php") ?>
 
-    <h1 class="title-text" id="contact-us-title">Contact Us</h1>
+    <h1 class="title-text" id="contact-us-title"></h1>
     <div class="container">
         <div class="icons">
             <img src="images/mail.png" alt="Email Logo" class="icon"/>

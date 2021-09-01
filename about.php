@@ -7,7 +7,8 @@
     <title>Donate For Joy | About</title>
     <link href='css/base.css' rel='stylesheet'>
     <link href='css/about.css' rel='stylesheet'>
-    <script src="about_animation.js" defer></script>
+    <script src="script/about_animation.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <?php include("navbar.php") ?>
@@ -44,5 +45,14 @@
             </td>
         </tr>
     </table>
+
+    <script>
+        $(function() {
+            $(".nav-bar div:nth-child(2) a").addClass("secondary-color-bg");
+            $(".nav-bar div:last-child a").removeClass("secondary-color-bg");
+            $(".nav-bar div:first-child a").removeClass("secondary-color-bg");
+            $(".nav-bar div:last-child a").removeClass("secondary-color-bg");
+        });
+    </script>
 </body>
 </html>
