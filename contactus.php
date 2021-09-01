@@ -9,6 +9,8 @@
     <link href='css/contactus.css' rel='stylesheet'>
 </head>
 <body>
+    <?php include("navbar.php") ?>
+
     <h1 class="title-text">Contact Us</h1>
     <div class="container">
         <div class="icons">
