@@ -9,6 +9,7 @@
     <link href='css/base.css' rel='stylesheet'>
 </head>
 <body>
+    <?php include("navbar.php") ?>
     
 </body>
 </html>
