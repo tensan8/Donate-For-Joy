@@ -69,7 +69,7 @@
     </div>
 
 
-    <!-- THIRD SECTION OF THE HOME PAGE -->
+    <!-- THIRD SECTION OF THE HOME PAGE (VIDEO) -->
 
     <div class="third-section">
     <iframe width="1280" height="720" src="https://www.youtube.com/embed/sKtCP6htHqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -80,6 +80,8 @@
             and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
             written in 45 BC. </p>
     </div>
+
+    <!-- DARI SINI TENSAN -->
 
     <div class="fourth-section">
         
