@@ -52,10 +52,9 @@ p, a {
 .header-bar {
     display: flex;
     justify-content: space-between;
-    background-color: transparent;
-    padding: 1rem;
+    background-color: #fff;
+    padding: 0.5rem 2.5rem ;
     align-items: center;
-    margin: 0 1rem;
 }
 
 .header-bar * {
@@ -64,7 +63,7 @@ p, a {
 
 .header-bar a {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 .header-bar a:hover {
@@ -83,8 +82,8 @@ p, a {
 }
 
 .header-bar img {
-    width: 4.5%;
-    height: 4.5%;
+    width: 3%;
+    height: 3%;
     background: transparent;
 }
 
