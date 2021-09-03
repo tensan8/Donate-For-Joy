@@ -137,6 +137,7 @@
     height: 70rem;
     background-color: #F1EFEA;
     padding-top: 4.5rem;
+    padding-bottom: 18rem;
 }
 
 .third-section p {
@@ -187,4 +188,71 @@ iframe {
     background-color: #F1EFEA;
     font-size: 1.5rem;
     margin-top: 1rem;
+}
+
+/* Button and Modal (dialog) box */
+
+.third-section button{
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 1rem;
+    border: 0.2rem solid #E5D3BB;
+    width: 20rem;
+    height: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    font-size: 125%;
+    font-weight: bolder;
+    transition: ease 0.7s;
+}
+
+.third-section button:hover{
+    background-color: #E5D3BB;
+    transition: ease 0.7s;
+    cursor:pointer;
+}
+
+#modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: ease 0.4s;
+}
+
+.modal-content{
+    background-color: #F8F7F5;
+    margin: 15% auto;
+    border: 0.2rem solid black;
+    width: 60%;
+    border-radius: 1.5rem;
+}
+
+.modal-content p{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#x-sign{
+    background-color: #F8F7F5;
+    color: black;
+    float: right;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+#x-sign:hover{
+    color: red;
+    cursor: pointer;
 }

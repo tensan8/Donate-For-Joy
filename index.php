@@ -81,7 +81,6 @@
             written in 45 BC. </p>
 
 
-
         <!-- 
             *****************
             Tensan works here
@@ -91,9 +90,23 @@
             <span class="animate-text animate-text-scrolled">Fundraising Goal</span>
         </h2>
         <div class="progress-bar">
-            <div class="filled-bar" data-done="80">80%</div>
+            <div class="filled-bar">0</div>
         </div>
-        <h3 class="italize-text-centered">Rp1.000.000 / Rp5.000.000</h3>
+        <h3 class="italize-text-centered">Rp<span id="collected-money">4.562.000</span> / Rp<span id="targeted-money">5.000.000</span></h3>
+        <button id="donate-button">Donate Now</button>
+
+        <div id="modal">
+            <div class="modal-content">
+                <span id="x-sign">&times;</span>
+                <p>
+                    Jeannyfer Claudya Halim
+                    <br/>
+                    BCA
+                    <br/>
+                    1234567890
+                </p>
+            </div>
+        </div>
     </div>
 
     <script src="script/index.js"></script>

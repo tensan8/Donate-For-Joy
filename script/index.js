@@ -60,6 +60,23 @@ $(function() {
     }
 });
 
+
+
+/* 
+    Value calculation
+*/
+var collectedMoney = document.getElementById("collected-money").innerHTML;
+var targetedMoney = document.getElementById("targeted-money").innerHTML;
+
+collectedMoney = collectedMoney.replace(/\./g, '');
+targetedMoney = targetedMoney.replace(/\./g, '');
+
+var percentage = (collectedMoney / targetedMoney) * 100;
+
+if(collectedMoney > targetedMoney){
+    percentage = 100;
+}
+
 /* 
     Progress bar 
 */
@@ -68,8 +85,9 @@ const progress = document.querySelector(".filled-bar");
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            progress.style.width = progress.getAttribute('data-done') + '%';
+            progress.style.width = percentage + '%';
             progress.style.opacity = 1;
+            progress.innerHTML = percentage + '%';
         } else {
             progress.style.width = 0;
             progress.style.opacity = 0;
@@ -80,3 +98,28 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(progress);
 
 
+
+/*
+    Modal / Dialog box
+*/
+var modal = document.getElementById("modal");
+var button = document.getElementById("donate-button");
+var exitSign = document.getElementById("x-sign");
+
+button.onclick = function(){
+    modal.style.opacity = 1;
+    modal.style.visibility = "visible";
+    
+}
+
+exitSign.onclick = function(){
+    modal.style.opacity = 0;
+    modal.style.visibility = "hidden";
+}
+
+window.onclick = function(event){
+    if (event.target == modal){
+        modal.style.opacity = 0;
+        modal.style.visibility = "hidden";
+    }
+}
