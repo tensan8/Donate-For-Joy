@@ -154,13 +154,37 @@ iframe {
     margin: auto;
 }
 
+/* SECOND PART OF THIRD SECTION (PROGRESS BAR AND BUTTON) */
+.third-section h2 {
+    background-color: #F1EFEA;
+}
 
-/* DARI SINI TENSAN */
+.progress-bar{
+    background-color: #d8d8d8;
+	border-radius: 2rem;
+	margin: 0 auto;
+	height: 3rem;
+	width: 55rem;
+    margin-top: 1rem;
+}
 
-/* FOURTH SECTION */
+.filled-bar{
+    background: linear-gradient(to left, #f2709c, #ff9472);
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+	opacity: 0;
+	transition: ease 1.5s;
+    transition-delay: 0.1s;
+    font-family: 'Gelasio', serif;
+}
 
-
-
-
-
-/* FIFTH SECTION */
+.third-section h3{
+    background-color: #F1EFEA;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}

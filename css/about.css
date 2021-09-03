@@ -32,14 +32,6 @@
     height: 25rem;
 }
 
-.italize-text-centered{
-    text-align: center;
-    font-style: italic;
-    margin-top: 5rem;
-    font-size: 3rem;
-    line-height: 4rem;
-}
-
 #address-style{
     text-decoration: none;
     color: #AC3E3E;
@@ -60,18 +52,6 @@ table p{
     font-size: 1.3rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
-}
-
-.animate-text{
-    background-size: 200% 100%;
-    background-image: linear-gradient(to right, #F8F7F5 50%, #E5D3BB 50%);
-    -webkit-transition: background-position 1s;
-    -moz-transition: background-position 1s;
-    transition: background-position 1s;
-}
-
-.animate-text-scrolled{
-    background-position: -100% 0;
 }
 
 .pop-hl{

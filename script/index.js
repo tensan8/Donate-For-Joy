@@ -58,6 +58,25 @@ $(function() {
             $($(".second-dot")[secondSlideIndex - 1]).addClass("active");
         }
     }
-
 });
-    
+
+/* 
+    Progress bar 
+*/
+const progress = document.querySelector(".filled-bar");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            progress.style.width = progress.getAttribute('data-done') + '%';
+            progress.style.opacity = 1;
+        } else {
+            progress.style.width = 0;
+            progress.style.opacity = 0;
+        }
+    })
+})
+
+observer.observe(progress);
+
+

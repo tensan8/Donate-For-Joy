@@ -69,27 +69,33 @@
     </div>
 
 
-    <!-- THIRD SECTION OF THE HOME PAGE (VIDEO) -->
+    <!-- THIRD SECTION OF THE HOME PAGE (VIDEO) + PROGRESS BAR AND DONATE NOW BUTTON-->
 
     <div class="third-section">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/sKtCP6htHqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/sKtCP6htHqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
             It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
             Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
             ooked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
             and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
             written in 45 BC. </p>
+
+
+
+        <!-- 
+            *****************
+            Tensan works here
+            ***************** 
+        -->
+        <h2 class="italize-text-centered">
+            <span class="animate-text animate-text-scrolled">Fundraising Goal</span>
+        </h2>
+        <div class="progress-bar">
+            <div class="filled-bar" data-done="80">80%</div>
+        </div>
+        <h3 class="italize-text-centered">Rp1.000.000 / Rp5.000.000</h3>
     </div>
 
-    <!-- DARI SINI TENSAN -->
-
-    <div class="fourth-section">
-        
-    </div>
-
-    <div class="fifth-section">
-        
-    </div>
     <script src="script/index.js"></script>
 </body>
 </html>
