@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate For Joy | Home</title>
+
+
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link href='css/base.css' rel='stylesheet'>
     <link href='css/index.css' rel='stylesheet'>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <!-- FIRST SECTION OF THE HOME PAGE  -->
@@ -22,19 +25,16 @@
     <!-- SECOND SECTION OF THE HOME PAGE (CAROUSEL) -->
     <div class="second-section">
         <h2>Panti Asuhan Bhakti Luhur Alma <br/>Needs Your Help !</h2>
-        <div class="first-carousel-container">
+        <div class="first-carousel-container" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
             <div class="first-carousel">
-                <div class="first-slide">
+                <div class="first-slide fade">
                     <img src="images/2.jpg" alt="Carousel picture 1" />
                 </div>
-                <div class="first-slide">
+                <div class="first-slide fade">
                     <img src="images/2.2.jpg" alt="Carousel picture 2"/>
                 </div>
 
-                <!-- <div class="first-dots-container">
-                    <span class="first-dot" onclick="currentSlides(1)"></span>
-                    <span class="first-dot" onclick="currentSlides(2)"></span>
-                </div> -->
+
             </div>
 
             <p>Panti Bhakti Luhur Alma (Panti Alma) sedang mengalami ketidaknyamanan dikarenakan oleh atap yang selalu merembes ketika hujan melanda, 
@@ -43,19 +43,16 @@
                 menawarkan bantuan kepada Panti Alma.</p>
         </div>
     
-        <div class="second-carousel-container">
+        <div class="second-carousel-container" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
             <div class="second-carousel">
-                <div class="second-slide">
+                <div class="second-slide fade">
                     <img src="images/3.JPG" alt="Carousel picture 3" />
                 </div>
-                <div class="second-slide">
+                <div class="second-slide fade">
                     <img src="images/3.3.jpg" alt="Carousel picture 4"/>
                 </div>
 
-                <!-- <div class="second-dots-container">
-                    <span class="second-dot" onclick="currentSlides(1)"></span>
-                    <span class="second-dot" onclick="currentSlides(2)"></span>
-                </div> -->
+
             </div>
             <p>Kebocoran tersebut terdapat pada tempat penyimpanan baju dan peralatan anak-anak, kamar mandi, teras dan juga ruang tamu. Ditambah dengan kondisi 
                 cuaca yang tidak menentu dan hujan terus menerus, apakah teman-teman bisa membayangkan betapa sulit dan terganggunya anak-anak di Panti serta orang-orang 
@@ -70,13 +67,15 @@
     <!-- THIRD SECTION OF THE HOME PAGE (VIDEO) + PROGRESS BAR AND DONATE NOW BUTTON-->
 
     <div class="third-section">
-        <iframe width="1280" height="720" src="https://drive.google.com/file/d/1SYb2rBzY6-MQwmUk2sYTSa1ZLw1BTCUb/preview" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>Dokumentasi tersebut dilakukan saat melakukan survey tempat karena Tim PPI Sarawak ingin melihat langsung apa yang sedang terjadi di Panti tersebut. 
+        <iframe width="1280" height="720" src="https://drive.google.com/file/d/1SYb2rBzY6-MQwmUk2sYTSa1ZLw1BTCUb/preview" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen 
+            data-aos="zoom-in" data-aos-duration="1500" data-aos-anchor-placement="center-center"></iframe>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-center">Dokumentasi tersebut dilakukan saat melakukan survey tempat karena Tim PPI Sarawak ingin melihat langsung apa yang sedang terjadi di Panti tersebut. 
             Tim PPI Sarawak juga menanyakan beberapa hal terkait bantuan apa yang dibutuhkan oleh Panti tersebut dan dengan tersenyum, Suster Tin (pengurus panti) 
             berkata bahwa bantuan yang kita bisa salurkan adalah bantuan untuk memperbaiki atap yang berlubang dan yang kondisinya sudah tidak memadai. Kemudian, 
             beliau juga menunjukkan tempat-tempat yang atapnya bocor dan berdampak buruk oleh hujan deras. Maka dari itu, Tim PPI Sarawak ingin mengajak teman-teman sekalian, 
             dimanapun kalian berada, untuk menyalurkan bantuan dengan menekan tombol ‘Donate Now’ dibawah ini. Berapapun yang teman-teman donasikan, walaupun kecil jumlahnya, 
             akan berarti sekali untuk teman-teman kita di Panti Alma.</p>
+       
 
 
         <h2 class="italize-text-centered">
@@ -103,6 +102,9 @@
             </div>
         </div>
     </div>
+    
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script src="script/index.js"></script>
 </body>

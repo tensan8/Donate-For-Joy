@@ -49,6 +49,7 @@
 
 .first-carousel-container, .second-carousel-container {
     display: flex;
+    display: -webkit-flex;
     width: 100%;
     margin-top: 2rem;
     background-color: #DABCA0;
@@ -62,7 +63,7 @@
     background: #DABCA0;
     font-size: 1.1rem;
     margin-left: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     margin-right: 1.5rem;
     line-height: 2.1;
 
@@ -72,21 +73,21 @@
     background: #DABCA0;
     font-size: 1.1rem;
     margin-left: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     margin-right: 1.5rem;
     line-height: 2.1;
 }
 
 .first-carousel {
     width: 100%;
-    max-height: 450px;
+    height: 492px;
     position: relative;
 }
 
 .second-carousel {
     position: relative;
     width: 100%;
-    max-height: 450px;
+    height: 492px;
     order: 2;
 }
 
@@ -96,6 +97,7 @@
 
 .first-slide img, .second-slide img {
     width: 600px;
+    height: 492px;
 }
 
 .first-dot {
@@ -107,6 +109,8 @@
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    -webkit-transition: background-color 0.6s ease;
+    -moz-transition: background-color 0.6s ease;
 }
 
 .second-dot {
@@ -118,6 +122,8 @@
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    -webkit-transition: background-color 0.6s ease;
+    -moz-transition: background-color 0.6s ease;
 }
 
 .first-dots-container {
@@ -139,7 +145,7 @@
     height: 75rem;
     background-color: #F1EFEA;
     padding-top: 4.5rem;
-    padding-bottom: 18rem;
+    padding-bottom: 30rem;
 }
 
 .third-section p {
@@ -177,6 +183,7 @@ iframe {
     border-radius: 2rem;
     color: white;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -200,6 +207,7 @@ iframe {
     align-items: center;
     justify-content: center;
     display: flex;
+    display: -webkit-flex;
     border-radius: 1rem;
     border: 0.2rem solid #E5D3BB;
     width: 20rem;
@@ -212,6 +220,8 @@ iframe {
     font-size: 125%;
     font-weight: bolder;
     transition: ease 0.7s;
+    -webkit-transition: ease 0.7s;
+    -moz-transition: ease 0.7s;
 }
 
 .third-section button:hover{
@@ -232,6 +242,8 @@ iframe {
     visibility: hidden;
     opacity: 0;
     transition: ease 0.4s;
+    -webkit-transition: ease 0.4s;
+    -moz-transition: ease 0.4s;
 }
 
 .modal-content{
@@ -256,6 +268,7 @@ iframe {
 
 .modal-content img{
     display: flex;
+    display: -webkit-flex;
     margin: 0 auto;
     padding-bottom: 2rem;
 }
@@ -277,6 +290,26 @@ iframe {
 .third-section span{
     background-color: transparent;
 }
+
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
 
 
 
@@ -321,6 +354,7 @@ iframe {
 
     .first-carousel, .second-carousel {
         text-align: center;
+        max-height: 280px;
     }
 
     .first-carousel-container p, .second-carousel-container p {
@@ -389,7 +423,7 @@ iframe {
 
     /* Second Section */
     .second-section {
-        width: 768px;
+        width:  768px;
         padding-bottom: 2rem;
     }
 
@@ -399,12 +433,12 @@ iframe {
     }
 
     .first-carousel, .second-carousel {
-        height: 480px;
+        height: 464px;
     }
 
     .first-slide img, .second-slide img {
         width: 400px;
-        height: 480px;
+        height: 464px;
     }
 
     .first-carousel-container p, .second-carousel-container p {
@@ -412,11 +446,10 @@ iframe {
         line-height: 1.6;
     }
 
-    
 
      /* Third Section */
     .third-section {
-        width: 768px;
+        width:  768px;
         padding-top: 2rem;
     }
     
@@ -449,5 +482,8 @@ iframe {
     }
 
 }
+
+
+
 
 

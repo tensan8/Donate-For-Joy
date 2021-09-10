@@ -1,62 +1,95 @@
 
 $(function() {
+    AOS.init();
+
+    
+
     $(".nav-bar div:nth-child(2) a").removeClass("secondary-color-bg");
     $(".nav-bar div:last-child a").removeClass("secondary-color-bg");
     $(".nav-bar div:first-child a").removeClass("secondary-color-bg");
     $(".nav-bar div:first-child a").addClass("secondary-color-bg");
 
+    // showSlides(firstSlideIndex, 1);
+    // showSlides(secondSlideIndex, 2);
 
+    // $(".first-carousel").on("click", function() {
+    //     showSlides(firstSlideIndex += 1, 1);
+    // });
+
+    // $(".second-carousel").on("click", function() {
+    //     showSlides(secondSlideIndex += 1, 2);
+    // })
+
+    // function currentSlide(n, order) {
+    //     if (order == 1) {
+    //         showSlides(firstSlideIndex = n, order);
+    //     }
+    //     else if (order == 2) {
+    //         showSlides(secondSlideIndex = n, order);
+    //     }
+    // }
+
+
+
+    // function showSlides(n, order) {
+    //     if (order == 1) {
+    //         if (n > $(".first-slide").length) {firstSlideIndex = 1;}
+    //         if (n < 1) {firstSlideIndex = $(".first-slide").length}
+
+    
+    //         $(".first-slide").css("display", "none");
+            
+    //         $(".first-dot").removeClass("active");
+            
+    //         $($(".first-slide")[firstSlideIndex - 1]).css("display", "block");
+    //         $($(".first-dot")[firstSlideIndex - 1]).addClass("active");
+    //     }
+    //     else if (order == 2) {
+    //         if (n > $(".second-slide").length) {secondSlideIndex = 1;}
+    //         if (n < 1) {secondSlideIndex = $(".second-slide").length}
+
+    
+    //         $(".second-slide").css("display", "none");
+            
+    //         $(".second-dot").removeClass("active");
+            
+    //         $($(".second-slide")[secondSlideIndex - 1]).css("display", "block");
+    //         $($(".second-dot")[secondSlideIndex - 1]).addClass("active");
+    //     }
+    // }
+
+    /* 
+        Automatic Slideshow
+    */
     let firstSlideIndex = 1;
     let secondSlideIndex = 1;
 
+    var slides = document.getElementsByClassName("first-slide");
+    var secondSlides = document.getElementsByClassName("second-slide");
+    firstSlide();
+    secondSlide();
+    // showSlides(secondSlides, secondSlideIndex);
 
-    showSlides(firstSlideIndex, 1);
-    showSlides(secondSlideIndex, 2);
-
-    $(".first-carousel").on("click", function() {
-        showSlides(firstSlideIndex += 1, 1);
-    });
-
-    $(".second-carousel").on("click", function() {
-        showSlides(secondSlideIndex += 1, 2);
-    })
-
-    function currentSlide(n, order) {
-        if (order == 1) {
-            showSlides(firstSlideIndex = n, order);
+    function firstSlide() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
         }
-        else if (order == 2) {
-            showSlides(secondSlideIndex = n, order);
-        }
+        firstSlideIndex++;
+        if (firstSlideIndex > slides.length) {firstSlideIndex = 1}    
+        slides[firstSlideIndex-1].style.display = "block";  
+
+        setTimeout(firstSlide, 3500); // Change image every 2 seconds
     }
 
-
-
-    function showSlides(n, order) {
-        if (order == 1) {
-            if (n > $(".first-slide").length) {firstSlideIndex = 1;}
-            if (n < 1) {firstSlideIndex = $(".first-slide").length}
-
-    
-            $(".first-slide").css("display", "none");
-            
-            $(".first-dot").removeClass("active");
-            
-            $($(".first-slide")[firstSlideIndex - 1]).css("display", "block");
-            $($(".first-dot")[firstSlideIndex - 1]).addClass("active");
+    function secondSlide() {
+        for (let i = 0; i < secondSlides.length; i++) {
+            secondSlides[i].style.display = "none";  
         }
-        else if (order == 2) {
-            if (n > $(".second-slide").length) {secondSlideIndex = 1;}
-            if (n < 1) {secondSlideIndex = $(".second-slide").length}
+        secondSlideIndex++;
+        if (secondSlideIndex > secondSlides.length) {secondSlideIndex = 1}    
+        secondSlides[secondSlideIndex-1].style.display = "block";  
 
-    
-            $(".second-slide").css("display", "none");
-            
-            $(".second-dot").removeClass("active");
-            
-            $($(".second-slide")[secondSlideIndex - 1]).css("display", "block");
-            $($(".second-dot")[secondSlideIndex - 1]).addClass("active");
-        }
+        setTimeout(secondSlide, 4000); // Change image every 2 seconds
     }
 });
 
