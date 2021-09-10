@@ -31,10 +31,10 @@
                     <img src="images/2.2.jpg" alt="Carousel picture 2"/>
                 </div>
 
-                <div class="first-dots-container">
+                <!-- <div class="first-dots-container">
                     <span class="first-dot" onclick="currentSlides(1)"></span>
                     <span class="first-dot" onclick="currentSlides(2)"></span>
-                </div>
+                </div> -->
             </div>
 
             <p>Panti Bhakti Luhur Alma (Panti Alma) sedang mengalami ketidaknyamanan dikarenakan oleh atap yang selalu merembes ketika hujan melanda, 
@@ -44,11 +44,6 @@
         </div>
     
         <div class="second-carousel-container">
-            <p>Kebocoran tersebut terdapat pada tempat penyimpanan baju dan peralatan anak-anak, kamar mandi, teras dan juga ruang tamu. Ditambah dengan kondisi 
-                cuaca yang tidak menentu dan hujan terus menerus, apakah teman-teman bisa membayangkan betapa sulit dan terganggunya anak-anak di Panti serta orang-orang 
-                disana yang harus merasakan rintikkan hujan dan menanggulangi kebocoran tersebut. Jika bukan kita yang membantu mereka, siapa yang akan mengulurkan tangan 
-                untuk membantu mereka? Sampai kapankan mereka harus hidup seperti ini?</p>
-
             <div class="second-carousel">
                 <div class="second-slide">
                     <img src="images/3.JPG" alt="Carousel picture 3" />
@@ -57,12 +52,18 @@
                     <img src="images/3.3.jpg" alt="Carousel picture 4"/>
                 </div>
 
-                <div class="second-dots-container">
+                <!-- <div class="second-dots-container">
                     <span class="second-dot" onclick="currentSlides(1)"></span>
                     <span class="second-dot" onclick="currentSlides(2)"></span>
-                </div>
+                </div> -->
             </div>
-        </div>
+            <p>Kebocoran tersebut terdapat pada tempat penyimpanan baju dan peralatan anak-anak, kamar mandi, teras dan juga ruang tamu. Ditambah dengan kondisi 
+                cuaca yang tidak menentu dan hujan terus menerus, apakah teman-teman bisa membayangkan betapa sulit dan terganggunya anak-anak di Panti serta orang-orang 
+                disana yang harus merasakan rintikkan hujan dan menanggulangi kebocoran tersebut. Jika bukan kita yang membantu mereka, siapa yang akan mengulurkan tangan 
+                untuk membantu mereka? Sampai kapankan mereka harus hidup seperti ini?</p>
+
+            
+        </div> 
     </div>
 
 

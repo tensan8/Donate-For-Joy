@@ -35,6 +35,8 @@ body {
 
 p, a {
     font-family: 'Gelasio', serif;
+    /* line-height: 1.6;
+    word-spacing: 4px; */
 }
 
 .primary-color-bg {
@@ -73,7 +75,7 @@ p, a {
     color: #000;
 }
 
-.header-bar a:hover {
+.nav-bar a:hover {
     color: #dbc9b1;
 }
 
@@ -89,7 +91,7 @@ p, a {
 }
 
 .header-bar img {
-    width: 3%;
+    width: 4%;
     height: 3%;
     background: transparent;
 }
@@ -112,6 +114,53 @@ HIGHLIGHT ANIMATION
 
 .animate-text-scrolled{
     background-position: -100% 0;
+}
+
+
+/******************
+MEDIA QUERIES
+******************/
+/* MOBILE HP */
+@media screen and (min-width: 320px) and (max-width: 480px)  {
+    .header-bar {
+        padding: 0.5rem 1rem;
+    }
+
+    .header-bar img {
+        width: 5%;
+        height: 5%;
+    }
+
+    .header-bar h1 a {
+        font-size: 1.5rem;
+    }
+
+    .nav-bar div {
+        font-size: 1rem;
+        padding: 0 0.8rem;
+    }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 768px)  {
+    .header-bar {
+        padding: 0.5rem 1rem;
+    }
+
+    .header-bar img {
+        width: 4%;
+        height: 4%;
+    }
+
+    .header-bar h1 a {
+        font-size: 1.8rem;
+    }
+
+    .nav-bar div {
+        font-size: 1.1rem;
+        padding: 0 0.8rem;
+    }
 }
 
 
