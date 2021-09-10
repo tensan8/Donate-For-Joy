@@ -1,3 +1,7 @@
+.header-bar {
+    margin-bottom: 1rem;
+}
+
 #centered-title{
     text-align: center;
 }
@@ -51,11 +55,57 @@ table{
 table p{
     font-size: 1.1rem;
     margin-top: 1rem;
+    line-height: 1.5;
     margin-bottom: 2rem;
+}
+
+table tr:first-child td {
+    text-align: center;
 }
 
 .pop-hl{
     background-size: 200% 100%;
     background-position: -100% 0;
     background-image: linear-gradient(to right, #F8F7F5 50%, #D5BAB3 50%);
+}
+
+/******************
+MEDIA QUERIES
+******************/
+/* MOBILE HP */
+@media screen and (min-width: 320px) and (max-width: 480px)  {
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .italize-text-centered {
+        line-height: 3rem;
+    }
+
+    #first-picture-cover-big {
+        width: 350px;
+        height: 20rem;
+    }
+
+    #second-picture-cover-wide {
+        width: 380px;
+        height: 20rem;
+    }
+}
+
+/* Large Size Laptop */
+@media screen and (min-width: 1440px) {
+    #first-picture-cover-big {
+        width: 800px;
+        height: 30rem;
+    }
+
+    #second-picture-cover-wide {
+        width: 880px;
+        height: 30rem;
+    }
 }

@@ -2,10 +2,6 @@
 
 .first-section {
     position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
     height: 55rem;
     background-image: url("../images/cover-darken.png");
     background-size: cover;
@@ -13,22 +9,18 @@
 }
 
 .first-section-image-content {
+    width: 50rem;
     position: absolute;
     background: transparent;
     top: 38%;
     left: 18%;
 }
 
-.first-section-image-content {
-    width: 50rem;
-    overflow-wrap: break-word;
-}
-
 .first-section-image-content h1 {
     background: transparent;
     color: #fff;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .first-section-image-content p {
@@ -52,49 +44,58 @@
     text-align: center;
     font-size: 3rem;
     margin-top: 4.5rem;
+    text-align: center;
 }
 
 .first-carousel-container, .second-carousel-container {
     display: flex;
     width: 100%;
     margin-top: 2rem;
+    background-color: #DABCA0;
+}
+
+.first-carousel-container *, .second-carousel-container * {
+    background: transparent;
 }
 
 .first-carousel-container p {
+    background: #DABCA0;
     font-size: 1.1rem;
     margin-left: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-right: 1.5rem;
+    line-height: 2.1;
+
 }
 
 .second-carousel-container p {
+    background: #DABCA0;
     font-size: 1.1rem;
     margin-left: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-right: 1.5rem;
+    line-height: 2.1;
 }
 
 .first-carousel {
-    max-width: 700px;
+    width: 100%;
+    max-height: 450px;
     position: relative;
-    margin-left: 1.5rem;
-    margin-top: 1rem;
 }
 
 .second-carousel {
-    max-width: 700px;
     position: relative;
-    margin-right: 1.5rem;
-    margin-top: 1rem;
+    width: 100%;
+    max-height: 450px;
+    order: 2;
 }
 
 .first-slide, .second-slide {
     display: none;
-    max-width: 70%;
 }
 
 .first-slide img, .second-slide img {
-    width: 500px;
-    height: 500px;
+    width: 600px;
 }
 
 .first-dot {
@@ -135,7 +136,7 @@
 /* THIRD SECTION */
 
 .third-section {
-    height: 70rem;
+    height: 75rem;
     background-color: #F1EFEA;
     padding-top: 4.5rem;
     padding-bottom: 18rem;
@@ -145,12 +146,13 @@
     background: transparent;
     margin: 2rem 20%;
     font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 iframe {
     display: block;
     text-align: center;
-    width: 50%;
+    width: 60%;
     height: 50%;
     margin-top: 5px;
     margin: auto;
@@ -205,7 +207,8 @@ iframe {
     font-family: 'Montserrat', sans-serif;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
     font-size: 125%;
     font-weight: bolder;
     transition: ease 0.7s;
@@ -274,3 +277,177 @@ iframe {
 .third-section span{
     background-color: transparent;
 }
+
+
+
+/* MEDIA SCREEN QUERIES */
+/* MOBILE HP */
+@media screen and (min-width: 320px) and (max-width: 480px)  {
+
+    /* First Section */
+    .first-section {
+        height: 30rem;
+        width: 480px;
+    }
+
+    .first-section-image-content {
+        width: 380px;
+        left: 15%;
+    }
+
+    .first-section-image-content h1 {
+        font-size: 2rem;
+    }
+
+    /* Second Section */
+    .second-section {
+        width: 480px;
+        padding-bottom: 2rem;
+    }
+
+    .second-section h2 {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .first-slide img, .second-slide img {
+        width: 430px;
+        height: 280px;
+    }
+
+    .first-carousel-container, .second-carousel-container {
+        display: block;
+    }
+
+    .first-carousel, .second-carousel {
+        text-align: center;
+    }
+
+    .first-carousel-container p, .second-carousel-container p {
+        margin-top: 1rem;
+        line-height: 1.7;
+    }
+
+    /* Third Section */
+
+    .third-section {
+        width: 480px;
+        padding-top: 2rem;
+    }
+
+    .third-section p {
+        margin: 1.5rem;
+        line-height: 1.7;
+    }
+
+    .third-section h2 {
+        font-size: 1.8rem;
+    }
+
+    iframe {
+        width: 430px;
+        height: 30%;
+    }
+
+    .progress-bar {
+        height: 2rem;
+        width: 400px;
+    }
+
+    /* Modal Box */
+    .modal-content {
+        width: 80%;
+    }
+
+    .modal-content img {
+        width: 230px;
+    }
+
+    .modal-content p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 768px)  {
+    
+    /* First Section */
+    .first-section {
+        height: 40rem;
+        width: 768px;
+    }
+
+    .first-section-image-content {
+        width: 500px;
+        left: 15%;
+    }
+
+    .first-section-image-content h1 {
+        font-size: 2rem;
+    }
+
+    /* Second Section */
+    .second-section {
+        width: 768px;
+        padding-bottom: 2rem;
+    }
+
+    .second-section h2 {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+
+    .first-carousel, .second-carousel {
+        height: 480px;
+    }
+
+    .first-slide img, .second-slide img {
+        width: 400px;
+        height: 480px;
+    }
+
+    .first-carousel-container p, .second-carousel-container p {
+        margin-top: 1rem;
+        line-height: 1.6;
+    }
+
+    
+
+     /* Third Section */
+    .third-section {
+        width: 768px;
+        padding-top: 2rem;
+    }
+    
+    iframe {
+        width: 80%;
+        height: 50%;
+    }
+
+    .third-section p {
+        margin: 1.5rem 2.5rem;
+        line-height: 1.7;
+    }
+
+    .third-section h2 {
+        font-size: 2rem;
+    }
+
+    .progress-bar {
+        height: 2rem;
+        width: 680px;
+    }
+
+    /* Modal Box */
+    .modal-content {
+        width: 90%;
+    }
+
+    .modal-content img {
+        width: 230px;
+    }
+
+}
+
+
