@@ -1,9 +1,8 @@
 .container {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 40%;
     margin-left: 2rem;
-    margin-top: 0.6rem;
 }
 
 .icon {
@@ -32,4 +31,3 @@
     margin-left: 1.5rem;
     margin-top: 5rem;
 }
-
